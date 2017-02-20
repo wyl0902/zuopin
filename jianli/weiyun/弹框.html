@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type='button' value='anniu'  id='bnt1'/>
+		<script src='data.js'></script>
+		<script>
+		console.log(data.files[0].title)
+		function dia(options){
+			var diadiv=document.createElement('div');
+			 options=options || {};
+			 var defo={
+			 	title:"这是一个弹框",
+				content:"我是弹框",
+				okFn:function(){}
+			 };
+			 for(var attr in options){
+			 	defo[attr]=options[attr];
+			 }
+			var str=`
+					<div class='dell'>
+						<div class='head'>
+							<h4>${defo.title}</h4>
+							<a href='javascript:;'>×</a>
+						</div>
+						<div class='content' >
+							<p>${defo.content}</p>
+							<div class='qud'>
+								<a href='javascript:;'>确定</a>
+								<a href='javascript:;'>取消 </a>
+							</div>
+						</div>
+						
+					</div>`
+				diadiv.innerHTML=str;
+				diadiv.className='full-pop';
+				document.body.appendChild(diadiv);
+		}
+			var bnt=document.getElementById('bnt1');
+			bnt.onclick=function(){
+				dia({
+//					title:'蒋冲',
+//					content:'你'
+				})
+			}
+		</script>
+	</body>
+</html>

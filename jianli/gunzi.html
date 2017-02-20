@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#da{
+				width: 400px;
+				height: 500px;
+				border: 3px solid black;
+				margin: 100px auto;
+				overflow: hidden;
+				position: relative;
+			}
+			#box{
+				width: 800px;
+				height: 500px;
+				/*border: 3px solid black;*/
+				/*margin: 100px auto;*/
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			#kuan,#kuan3,#kuan4,#kuan5{
+				background: black;
+				position: absolute;
+				height: 150px;
+				bottom: 0;
+				left: 0;
+			}
+			#kuan2{
+				width: 40px;
+				height: 40px;
+				background: red;
+				position: absolute;
+				left: 0;
+				bottom:150px;
+				z-index: 1;
+				/*transition: 2s;*/
+			}
+			#bnt,#chkai{
+				width: 80px;
+				height: 40px;
+				background: #8E8F8F;
+				line-height: 40px;
+				font-weight: bold;
+				text-align: center;
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				
+			}
+			.active{
+				width:2px;
+				background: black;
+				position: absolute;
+				left: 40px;
+				bottom: 150px;
+				/*transition: 1s;*/
+			}
+			#jifen{
+				height: 40px;
+				position: absolute;
+				top: 20px;
+				left: 50%;
+				margin-left: -40px;
+			}
+			#jifen span{
+				float: left;
+				width:50px;
+				line-height:40px;
+				border: 1px solid black;
+				height: 100%;
+				margin-left: -1px;
+				text-align: center;
+			}
+			#chkai{
+				top: 80px;
+				text-decoration: none;
+				color: black;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div id='da'>
+			<div id='box'>
+				<!--<div id='kuan'></div>
+				<div id='kuan2'></div>
+				<div id='kuan3'></div>
+				<div id='kuan4'></div>-->
+				
+			</div>
+			<div id='jifen'>
+				<span>得分</span>
+				<span id='fen'>0</span>
+			</div>
+			<div id='bnt'>开始</div>
+			<a href='' id='chkai'>重新开始</a>
+		</div>
+		
+		
+		<script>
+			var box=document.getElementById('box');
+			
+			var kuan=document.getElementById('kuan');
+			var bnt=document.getElementById('bnt');
+			var num=0;
+			fn();
+			var kuan2=document.getElementById('kuan2');
+			var kuan3=document.getElementById('kuan3');
+			var kuan4=document.getElementById('kuan4');
+			var divs=box.getElementsByTagName('div');
+			var fenshu=0;
+			var fen=document.getElementById('fen');
+			bnt.onmousedown=fn2;
+			function fn2(){
+				var div=document.createElement('div');
+				div.className='active';
+				box.appendChild(div);
+				timer=setInterval(function(){
+					if(num<340){
+						num+=3;
+						div.style.height=num+'px';
+					}
+				},16)
+ 			}
+			bnt.onmouseup=fn3;
+			function fn3(){
+				bnt.onmousedown=null;
+				bnt.onmouseup=null;;
+				var x=divs[2].clientWidth;//第二块的宽；
+				var y1=divs[2].offsetLeft;
+				var x1=divs[3].clientWidth//第三块的宽；
+				var y=divs[3].getBoundingClientRect().left-divs[2].getBoundingClientRect().left;
+				var n=0;
+				var div=document.querySelector('#box .active');
+				clearInterval(timer);
+				var cha=divs[2].offsetLeft-divs[0].clientWidth;
+				var cha1=cha+divs[2].clientWidth;
+				bnt.timer=setInterval(function(){
+					n+=2;
+					div.style.transform='rotate('+n+'deg)';
+					div.style.transformOrigin='1px bottom';
+					if(n==90){
+						clearInterval(bnt.timer)
+						console.log(num>cha&&num<cha1)
+						if(num>cha&&num<cha1){  //判断是否移动到下一个柱子
+							move(divs[0],{"left":divs[2].offsetLeft},1000,function(){
+								move(box,{"left":-divs[2].offsetLeft},500,function(){
+									fn1();
+									var divs=box.getElementsByTagName('div');
+									divs[1].style.width=x+'px';
+									divs[1].style.left=0;
+									divs[2].style.width=x1+'px';
+									divs[2].style.left=y+'px'
+									divs[3].style.width=40+Math.random()*20+'px';
+									divs[3].style.left=400+Math.random()*40+'px';
+									box.style.left=0
+									num=0;
+									fenshu+=10;
+									console.log(fenshu)
+									fen.innerHTML=fenshu;
+									bnt.onmouseup=fn3;
+									bnt.onmousedown=fn2;
+								})
+							})
+						}else{
+							move(divs[0],{"left":num+40},1000,function(){
+								move(divs[0],{"bottom":0},500,function(){
+									alert('您输了');
+								})
+							})
+						}
+					}
+				},10)
+			}
+			function fn1(){  //重新创建
+				box.innerHTML='';
+				var div=document.createElement('div');
+				div.id='kuan';
+				var div1=document.createElement('div');
+				div1.id='kuan2';
+				var div2=document.createElement('div');
+				div2.id='kuan3';
+				var div3=document.createElement('div');
+				div3.id='kuan4'
+				box.appendChild(div1);
+				box.appendChild(div);
+				box.appendChild(div2);
+				box.appendChild(div3);
+			}
+			function fn(){//创建
+				var div=document.createElement('div');
+				div.id='kuan';
+				var div1=document.createElement('div');
+				div1.id='kuan2';
+				div.style.width=50+Math.random()*30+'px';
+				div.style.left=0+'px';
+				var div2=document.createElement('div');
+				div2.id='kuan3';
+				div2.style.width=40+Math.random()*30+'px';
+				div2.style.left=200+Math.random()*100+'px';
+				var div3=document.createElement('div');
+				div3.style.width=40+Math.random()*20+'px';
+				div3.style.left=400+Math.random()*40+'px';;
+				div3.id='kuan4'
+				box.appendChild(div1);
+				box.appendChild(div);
+				box.appendChild(div2);
+				box.appendChild(div3);
+			}
+			var timer1=null;
+			function move (obj,object1,duration,fn) {
+		    	var startTime = new Date();
+		    	var d = duration;
+		    	var j = {};
+		    	for( var a in object1){
+		    		j[a] = {};
+		    		j[a].b = parseFloat(getComputedStyle(obj)[a]);
+		    		j[a].c = object1[a] - j[a].b; 
+		    	}
+		    	obj.timer = setInterval(function(){
+		    		var t = new Date() - startTime;
+		    		if(t>=d){
+		    			t = d;
+		    		}
+		    		for(var a in j){
+		    			var c = j[a].c;
+		    			var b = j[a].b;
+						var v = c/d*t+b;
+		    			if(a == "opacity"){
+		    				obj.style[a] = v ;
+		    			}else{
+		    				obj.style[a] = v + "px";
+		    			}
+		    		}
+		    		if(t==d){
+		    			clearInterval(obj.timer);
+		    			fn&&fn();
+		    		}
+		    	},16)
+		    }
+		</script>
+	</body>
+</html>
