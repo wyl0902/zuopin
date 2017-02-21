@@ -422,6 +422,7 @@ h2 {
 }
 #demo_list{
 	width: 100%;
+	height: 150px;
 	display: flex;
 	justify-content: space-around;
 	padding:80px 0;
@@ -430,10 +431,11 @@ h2 {
 #demo_list li{
 	width: 150px;
 	height: 150px;
-	overflow: hidden;
+	display: none;
+	/*overflow: hidden;*/
 	box-shadow:-5px -5px 5px black;
-	transition:0.3s ease-in;
-	background: rgba(0,0,0,0.2);
+	transition:1s ease-in;
+	/*background: rgba(0,0,0,0.2);*/
 }
 #demo_list li a{
 	display: inline-block;
