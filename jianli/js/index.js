@@ -58,14 +58,14 @@ $('#dowebok').fullpage({
 				$('#demo_list li').eq(0).fadeIn(400,function(){
 					this.style.transform='rotate(360deg)';
 					$(this).next().fadeIn(400,function(){
-					this.style.transform='rotate(360deg)';
-					$(this).next().fadeIn(400,function(){
-					this.style.transform='rotate(360deg)';
-					$(this).next().fadeIn(400,function(){
-					this.style.transform='rotate(360deg)'
-				})
-				})
-				})
+						this.style.transform='rotate(360deg)';
+						$(this).next().fadeIn(400,function(){
+							this.style.transform='rotate(360deg)';
+							$(this).next().fadeIn(400,function(){
+								this.style.transform='rotate(360deg)'
+							})
+						})
+					})
 				})
 				$('#demo_list li').css('overflow','hidden')
 				console.log()
