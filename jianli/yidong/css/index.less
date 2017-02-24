@@ -24,8 +24,44 @@ p{
     right: 20/@rem;
     z-index: 1000;
     animation: xuan 1s infinite;
+    -webkit-animation: xuan 1s infinite;
 }
 @keyframes xuan{
+    0%{
+        transform:rotate(0deg);
+    }
+    10%{
+        transform:rotate(36deg);
+    }
+    20%{
+        transform:rotate(72deg);
+    }
+    30%{
+        transform:rotate(108deg);
+    }
+    40%{
+        transform:rotate(144deg);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    60%{
+        transform:rotate(216deg);
+    }
+    70%{
+        transform:rotate(252deg);
+    }
+    80%{
+        transform:rotate(288deg);
+    }
+    90%{
+        transform:rotate(324deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+@-webkit-keyframes xuan{
     0%{
         transform:rotate(0deg);
     }
@@ -77,6 +113,7 @@ p{
 #list li{
     display: none;
     transform: scale(1.5);
+    -webkit-transform: scale(1.5);;
     transition: 1s;
     width: 114/@rem;
     height: 174/@rem;
@@ -172,6 +209,7 @@ p{
     top: 94/@rem;
     left:48/@rem;
     background: url(../img/bi2.png);
+    -webkit-transform: rotate(90deg) scale(1.5);
     transform: rotate(90deg) scale(1.5);
     background-size:100% 100% ;
     z-index: 13;
@@ -233,6 +271,7 @@ p{
     left:-106/@rem;
     background: url(../img/bg3.png);
     transform: rotateZ(12deg) scale(1.5);
+    -webkit-transform: rotateZ(12deg) scale(1.5);;
     background-size:100% 100% ;
     z-index: 1;
 }
@@ -241,6 +280,7 @@ p{
     left:75/@rem;
     background: url(../img/bg6.png);
     transform: rotateZ(46deg) scale(1.5);
+    -webkit-transform: rotateZ(46deg) scale(1.5);;
     background-size:100% 100% ;
     z-index: 2;
 }
@@ -249,6 +289,7 @@ p{
     left:77/@rem;
     background: url(../img/bg4.png);
     transform: rotateZ(332deg) scale(1.5);
+    -webkit-transform: rotateZ(332deg) scale(1.5);;
     background-size:100% 100% ;
     z-index: 3;
 }
@@ -257,6 +298,7 @@ p{
     left:77/@rem;
     background: url(../img/bg8.png);
     transform: rotateZ(322deg) scale(1.5);
+    -webkit-transform: rotateZ(322deg) scale(1.5);;
     background-size:100% 100% ;
     z-index: 4;
 }
@@ -265,6 +307,7 @@ p{
     left:-158/@rem;
     background: url(../img/bg9.png);
     transform: rotateZ(330deg) scale(1.5);
+    -webkit-transform: rotateZ(330deg) scale(1.5);;
     background-size:100% 100% ;
     z-index: 5;
 }
@@ -273,6 +316,7 @@ p{
     left:-19/@rem;
     background: url(../img/bg7.png);
     transform: rotateZ(17deg) scale(1.5);
+    -webkit-transform: rotateZ(17deg) scale(1.5);;
     background-size:100% 100% ;
     z-index: 6;
 }
@@ -301,6 +345,7 @@ p{
     left:20/@rem;
     background: url(../img/bi2.png);
     transform: rotateZ(90deg) scale(1.5);
+    -webkit-transform: rotateZ(90deg) scale(1.5);;
     background-size:100% 100% ;
     z-index: 9;
 }
@@ -313,6 +358,7 @@ p{
     background-size:100% 100% ;
     z-index: 10;
     animation: rotate  3s infinite;
+    -webkit-animation: rotate  3s infinite;;
 }
 #list1 li:nth-child(11){
     width:78/@rem;
@@ -323,8 +369,20 @@ p{
     background-size:100% 100% ;
     z-index: 11;
     animation: rotate 3s infinite;
+    -webkit-animation: rotate 3s infinite;;
 }
 @keyframes rotate{
+    0%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+@-webkit-keyframes rotate{
     0%{
         transform: rotate(-15deg);
     }
@@ -365,6 +423,7 @@ p{
     background: url(../img/bg11.png) no-repeat;
     background-size: 100% 100%;
     transform: rotateZ(270deg);
+    -webkit-transform: rotateZ(270deg);;
     z-index: 1;
 }
 #list3 li:nth-child(2){
@@ -376,6 +435,7 @@ p{
     background: url(../img/bg111.png) no-repeat;
     background-size: 100% 100%;
     transform: rotateZ(270deg);
+    -webkit-transform: rotateZ(270deg);;
     z-index: 2;
 }
 #list3 li:nth-child(2){
@@ -386,6 +446,7 @@ p{
     background: url(../img/bg111.png) no-repeat;
     background-size: 100% 100%;
     transform: rotateZ(270deg);
+    -webkit-transform: rotateZ(270deg);;
     z-index: 2;
 }
 #list3 li:nth-child(3){
@@ -425,6 +486,7 @@ p{
      transition:1s;
     background: url(../img/bg3.png) no-repeat;
     transform: scale(1.5) rotateZ(351deg);
+    -webkit-transform: scale(1.5) rotateZ(351deg);;
     background-size: 100% 100%;
     z-index: 6;
 }
@@ -448,6 +510,7 @@ p{
     background-size:100% 100% ;
     z-index: 10;
     animation: rotate  3s infinite;
+    -webkit-animation: rotate  3s infinite;;
 }
 #list3 li:nth-child(9){
     width:78/@rem;
@@ -458,8 +521,20 @@ p{
     background-size:100% 100% ;
     z-index: 11;
     animation: rotate 3s infinite;
+    -webkit-animation: rotate 3s infinite;;
 }
 @keyframes rotate{
+    0%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+@-webkit-keyframes rotate{
     0%{
         transform: rotate(-15deg);
     }
@@ -500,6 +575,7 @@ p{
     background: url(../img/hen11.png) no-repeat;
     background-size: 100% 100%;
     transform: rotateZ(270deg);
+    -webkit-transform: rotateZ(270deg);;
     z-index: 1;
 }
 #list4 li:nth-child(2){
@@ -511,6 +587,7 @@ p{
     background: url(../img/hen1.png) no-repeat;
     background-size: 100% 100%;
     transform: rotateZ(270deg);
+    -webkit-transform: rotateZ(270deg);;
     z-index: 2;
 }
 #list4 li:nth-child(4){
@@ -570,6 +647,7 @@ p{
     background: url(../img/bg8.png) no-repeat;
     background-size: 100% 100%;
     transform: scale(1.5) rotateZ(354deg);
+    -webkit-transform: scale(1.5) rotateZ(354deg);;
     z-index: 7;
 }
 #list4 li:nth-child(8){
@@ -590,6 +668,7 @@ p{
     background-size:100% 100% ;
     z-index: 9;
     animation: rotate 3s infinite;
+    -webkit-animation: rotate 3s infinite;
 }
 #list4 li:nth-child(10){
     width:78/@rem;
@@ -600,6 +679,7 @@ p{
     background-size:100% 100% ;
     z-index: 10;
     animation: rotate 3s infinite;
+    -webkit-animation: rotate 3s infinite;;
 }
 #page_five{
     width: 100%;
@@ -672,6 +752,7 @@ p{
 //   transition: 2s 1s;
     background: url(../img/bg6.png);
     transform: rotateZ(345deg) scale(1.5);
+    -webkit-transform: rotateZ(345deg) scale(1.5);;
     background-size: 100% 100%;
     z-index: 5; 
 }
@@ -693,6 +774,7 @@ p{
     background-size:100% 100% ;
     z-index: 7;
     animation: rotate 3s infinite;
+    -webkit-animation: rotate 3s infinite;
 }
 #list5 li:nth-child(8){
     width:78/@rem;
@@ -703,6 +785,7 @@ p{
     background-size:100% 100% ;
     z-index: 8;
     animation: rotate 3s infinite;
+    -webkit-animation: rotate 3s infinite;
 }
 #page_six{
     width: 100%;
@@ -769,6 +852,7 @@ p{
     background: url(../img/bg9.png) no-repeat;
     background-size: 100% 100%;
     transform: rotateZ(17deg) scale(1.5);
+    -webkit-transform: rotateZ(17deg) scale(1.5);;
     z-index: 5;
 }
 #list6 li:nth-child(6){
@@ -790,6 +874,7 @@ p{
     background-size:100% 100% ;
     z-index: 7;
     animation: rotate 3s infinite;
+    -webkit-animation: rotate 3s infinite;
 }
 #list6 li:nth-child(8){
     width:78/@rem;
@@ -800,6 +885,7 @@ p{
     background-size:100% 100% ;
     z-index: 8;
     animation: rotate 3s infinite;
+     -webkit-animation: rotate 3s infinite;
 }
 #page_seven{
     width: 100%;
@@ -839,6 +925,7 @@ p{
     top: 296/@rem;
     transition: 1s;
     transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
     background: url(../img/dan7.png) no-repeat;
     background-size: 100% 100%;
     z-index: 2;
@@ -851,6 +938,7 @@ p{
     z-index: 3;
      transition: 2s;
     transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
 }
 #list7 li:nth-child(4){
     width:23/@rem;
@@ -860,6 +948,7 @@ p{
     z-index: 4;
      transition: 2s;
     transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
 }
 #list7 li:nth-child(5){
     width:23/@rem;
@@ -869,6 +958,7 @@ p{
     z-index: 5;
      transition: 2s;
     transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
 }
 #list7 li:nth-child(6){
     width:375/@rem;
@@ -888,6 +978,7 @@ p{
     background: url(../img/bg7.png) no-repeat;
     background-size: 100% 100%;
     transform: rotateZ(10deg) scale(1.5);
+    -webkit-transform: rotateZ(10deg) scale(1.5);
     z-index: 7;
 }
 #list7 li:nth-child(8){
@@ -909,6 +1000,7 @@ p{
     background-size:100% 100% ;
     z-index: 9;
     animation: rotate 3s infinite;
+    -webkit-animation: rotate 3s infinite;
 }
 #list7 li:nth-child(10){
     width:78/@rem;
@@ -919,6 +1011,7 @@ p{
     background-size:100% 100% ;
     z-index: 10;
     animation: rotate 3s infinite;
+    -webkit-animation: rotate 3s infinite;
 }
 #page_eight{
     width: 100%;
@@ -1008,6 +1101,7 @@ p{
     background-size:100% 100% ;
     z-index: 9;
     animation: rotate 3s infinite;
+    -webkit-animation: rotate 3s infinite;
 }
 #list8 li:nth-child(8){
     width:78/@rem;
@@ -1018,6 +1112,7 @@ p{
     background-size:100% 100% ;
     z-index: 8;
     animation: rotate 3s infinite;
+    -webkit-animation: rotate 3s infinite;
 }
 #page_nine{
     width: 100%;
@@ -1067,6 +1162,7 @@ p{
     top: 167/@rem;
     transition:1s;
     transform: rotateZ(349deg);
+    -webkit-transform: rotateZ(349deg);
     background: url(../img/gf.gif) no-repeat;
     background-size: 100% 100%;
     z-index: 3;
@@ -1078,6 +1174,7 @@ p{
     transition:1s;
     top: 164/@rem;
     transform: rotateZ(8deg);
+    -webkit-transform: rotateZ(8deg);
     background: url(../img/gf.gif) no-repeat;
     background-size: 100% 100%;
     z-index: 4;
@@ -1089,6 +1186,7 @@ p{
     top: 320/@rem;
     transition:1s;
     transform: rotateZ(15deg);
+    -webkit-transform: rotateZ(15deg);
     background: url(../img/zi1.png) no-repeat;
     background-size: 100% 100%;
     z-index: 5;
@@ -1100,6 +1198,7 @@ p{
     top: 314/@rem;
     transition:1s;
     transform: rotateZ(349deg);
+    -webkit-transform: rotateZ(349deg);
     background: url(../img/bg2.png) no-repeat;
     background-size: 100% 100%;
     z-index: 6;
@@ -1111,6 +1210,7 @@ p{
     top: 326/@rem;
     transition:1s;
     transform: rotateZ(8deg);
+    -webkit-transform: rotateZ(8deg);
     background: url(../img/chuan11.png) no-repeat;
     background-size: 100% 100%;
     z-index: 7;

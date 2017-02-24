@@ -39,35 +39,49 @@ $(function(){
 		$('#page_one').fadeIn(1000,function(){
 		
 		$('#list li').eq(0).fadeIn(20,function(){
-			$(this).css('transform','scale(1)')
+			$(this).css('-webkit-transform','scale(1)')
+			$(this).css('transform','scale(1)');
 			$(this).next().fadeIn(20,function(){
+				$(this).css('-webkit-transform','scale(1)')
 				$(this).css('transform','scale(1)')
 				$(this).next().fadeIn(20,function(){
+					$(this).css('-webkit-transform','scale(1)')
 					$(this).css('transform','scale(1)')
 					$(this).next().fadeIn(20,function(){
+						$(this).css('-webkit-transform','scale(1)')
 						$(this).css('transform','scale(1)')
 						$(this).next().fadeIn(20,function(){
+							$(this).css('-webkit-transform','scale(1)')
 							$(this).css('transform','scale(1)')
 							$(this).next().fadeIn(20,function(){
+								$(this).css('-webkit-transform','scale(1)')
 								$(this).css('transform','scale(1)')
 								$(this).next().fadeIn(20,function(){
+									$(this).css('-webkit-transform','scale(1)')
 									$(this).css('transform','scale(1)')
 									$(this).next().fadeIn(20,function(){
+										$(this).css('-webkit-transform','scale(1)')
 										$(this).css('transform','scale(1)')
 										$(this).next().fadeIn(20,function(){
+											$(this).css('-webkit-transform','scale(1)')
 											$(this).css('transform','scale(1)')
 											$(this).next().fadeIn(20,function(){
+												$(this).css('-webkit-transform','scale(1)')
 												$(this).css('transform','scale(1)')
 												$(this).next().fadeIn(20,function(){
+													$(this).css('-webkit-transform','scale(1)')
 													$(this).css('transform','scale(1)')
 													$(this).next().fadeIn(20,function(){
+														$(this).css('-webkit-transform','scale(1)')
 														$(this).css('transform','scale(1)')
 														$(this).next().fadeIn(20,function(){
+															$(this).css('-webkit-transform','scale(1) rotateZ(90deg)')
 															$(this).css('transform','scale(1) rotateZ(90deg)')
 															$(this).animate({
 																left:200
 															},1500,function(){
 																$(this).next().fadeIn(20,function(){
+																	$(this).css('-webkit-transform','scale(1)')
 																	$(this).css('transform','scale(1)')
 																	$('#next').css('opacity','1')
 																})
@@ -117,48 +131,56 @@ $(function(){
 						$(this).animate({
 							opacity:1
 						},500,function(){
+							$(this).css('-webkit-transform','scale(1) rotateZ(12deg)')
 							$(this).css('transform','scale(1) rotateZ(12deg)')
 						});
 						$(this).next().fadeIn(200,function(){
 							$(this).animate({
 								opacity:1
 							},500,function(){
+								$(this).css('-webkit-transform','scale(1) rotateZ(46deg)')
 								$(this).css('transform','scale(1) rotateZ(46deg)')
 							});
 							$(this).next().fadeIn(200,function(){
 								$(this).animate({
 									opacity:1
 								},500,function(){
+									$(this).css('-webkit-transform','scale(1) rotateZ(332deg)')
 									$(this).css('transform','scale(1) rotateZ(332deg)')
 								});
 								$(this).next().fadeIn(200,function(){
 									$(this).animate({
 										opacity:1
 									},500,function(){
+										$(this).css('-webkit-transform','scale(1) rotateZ(322deg)')
 										$(this).css('transform','scale(1) rotateZ(322deg)')
 									});
 									$(this).next().fadeIn(200,function(){
 										$(this).animate({
 											opacity:1
 										},500,function(){
+											$(this).css('-webkit-transform','scale(1) rotateZ(330deg)')
 											$(this).css('transform','scale(1) rotateZ(330deg)')
 										});
 										$(this).next().fadeIn(200,function(){
 											$(this).animate({
 												opacity:1
 											},500,function(){
+												$(this).css('-webkit-transform','scale(1) rotateZ(17deg)')
 												$(this).css('transform','scale(1) rotateZ(17deg)')
 											});
 											$(this).next().fadeIn(200,function(){
 												$(this).animate({
 													opacity:1
 												},500,function(){
+													$(this).css('-webkit-transform','scale(1)')
 													$(this).css('transform','scale(1)')
 												});
 												$(this).next().fadeIn(200,function(){
 													$(this).animate({
 														opacity:1
 													},500,function(){
+														$(this).css('-webkit-transform','scale(1)rotateZ(90deg)')
 														$(this).css('transform','scale(1)rotateZ(90deg)')
 														var _this=this;
 														setTimeout(function(){
@@ -258,6 +280,7 @@ $(function(){
 										$(this).css('opacity','1');
 										$(this).next().fadeIn(1000,function(){
 											$(this).css('opacity','1');
+											$(this).css('-webkit-transform','rotateZ(351deg) scale(1)');
 											$(this).css('transform','rotateZ(351deg) scale(1)');
 											$(this).next().fadeIn(400,function(){
 												$(this).css('opacity','1');
@@ -340,6 +363,7 @@ $(function(){
 											$(this).css('opacity','1');
 											$(this).next().fadeIn(1000,function(){
 												$(this).css('opacity','1');
+												$(this).css('-webkit-transform','rotateZ(354deg) scale(1)');
 												$(this).css('transform','rotateZ(354deg) scale(1)');
 												$(this).next().fadeIn(400,function(){
 													$(this).css('opacity','1');
@@ -406,6 +430,7 @@ $(function(){
 														$(this).next().fadeIn(400,function(){
 															$(this).css('opacity','1');
 															$(this).css('transition','1s 2s');
+															$(this).css('-webkit-transform','rotateZ(345deg) scale(1)');
 															$(this).css('transform','rotateZ(345deg) scale(1)');
 															$(this).next().fadeIn(3000,function(){
 																$(this).css('opacity','1');
@@ -478,6 +503,7 @@ $(function(){
 														$(this).next().fadeIn(400,function(){
 															$(this).css('opacity','1');
 															$(this).css('transition','1s 3s');
+															$(this).css('-webkit-transform','rotateZ(17deg) scale(1)');
 															$(this).css('transform','rotateZ(17deg) scale(1)');
 															$(this).next().fadeIn(4000,function(){
 																$(this).css('opacity','1');
@@ -530,18 +556,22 @@ $(function(){
 											$(this).css('opacity','1');
 											$(this).next().fadeIn(100,function(){
 												$(this).css('opacity','1');
+												$(this).css('-webkit-transform','rotateY(0deg)');
 												$(this).css('transform','rotateY(0deg)');	
 											});
 											$(this).next().next().fadeIn(100,function(){
 												$(this).css('opacity','1');
+												$(this).css('-webkit-transform','rotateY(0deg)');
 												$(this).css('transform','rotateY(0deg)');
 											})
 											$(this).next().next().next().fadeIn(100,function(){
 												$(this).css('opacity','1');
+												$(this).css('-webkit-transform','rotateY(0deg)');
 												$(this).css('transform','rotateY(0deg)');
 											})
 											$(this).next().next().next().next().fadeIn(100,function(){
 												$(this).css('opacity','1');
+												$(this).css('-webkit-transform','rotateY(0deg)');
 												$(this).css('transform','rotateY(0deg)');
 												var _this=this;
 												setTimeout(function(){
@@ -550,6 +580,7 @@ $(function(){
 														$(this).next().fadeIn(100,function(){
 															$(this).css('opacity','1');
 															$(this).css('transition','1s 3s');
+															$(this).css('-webkit-transform','rotateZ(10deg) scale(1)');
 															$(this).css('transform','rotateZ(10deg) scale(1)');
 															$(this).next().fadeIn(4000,function(){
 																$(this).css('opacity','1');
@@ -614,6 +645,7 @@ $(function(){
 																$(this).next().fadeIn(200,function(){
 																	$(this).css('opacity','1');
 																	$(this).css('transition','1s 3s');
+																	$(this).css('-webkit-transform','scale(1)');
 																	$(this).css('transform','scale(1)');
 																	$(this).next().fadeIn(4000,function(){
 																		$(this).css('opacity','1');
