@@ -1,6 +1,15 @@
 $(function(){
+	var onoff=false;
+	$('#bgm').on('click',function(){
+		if(onoff){
+			$('#aud')[0].play()   //播放
+		}else{
+			$('#aud')[0].pause()  //暂停
+		}
+		onoff=!onoff
+	})
 	page1();
-	function page1(){
+	function page1(){  //第一页
 		var html=`<div id='page1'>
 				<ul id='list'>
 					<li></li>
@@ -80,7 +89,7 @@ $(function(){
 		$('#next').on('click',function(){
 			page2()
 		});
-		function page2(){
+		function page2(){  // 第二页
 			var html2=`<ul id='list1'>
 				<li></li>
 				<li></li>
@@ -194,7 +203,7 @@ $(function(){
 			$('#list1 li').eq(10).on('click',function(){
 				page3();
 			})
-			function page3(){
+			function page3(){   //第三页
 				var html3=`<div id='page3'>
 								<ul id='list3'>
 									<li></li>
@@ -276,7 +285,7 @@ $(function(){
 				$('#list3 li').eq(8).on('click',function(){
 						page4();
 				});
-				function page4(){
+				function page4(){   //第四页
 					var html4=`<div id='page4'>
 									<ul id='list4'>
 										<li></li>
@@ -336,7 +345,7 @@ $(function(){
 													$(this).css('opacity','1');
 													$(this).animate({
 														left:184
-													},500)
+													},1000)
 													$(this).next().fadeIn(400,function(){
 														$(this).css('opacity','1');
 													})
@@ -353,12 +362,333 @@ $(function(){
 					});
 					$('#list4 li').eq(8).on('click',function(){
 						$('#page_three').fadeOut(100,function(){
-							page3()
+							page3();
 						})
 					})
 					$('#list4 li').eq(9).on('click',function(){
-//							page4();
+							page5();
 					});
+					function page5(){     //第五页
+						var html5=`<div id='page5'>
+										<ul id='list5'>
+											<li></li>
+											<li></li>
+											<li>
+												<div class='zi'>
+													<p>我们一起在大城市打拼</p>
+													<p>十平米的房间里</p>
+													<p>我们挤着一张单人床</p>
+												</div>
+											</li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>`;
+						$('#page_five').html(html5)
+						$('#page_four').fadeOut(100,function(){
+							$('#page_five').fadeIn(100,function(){
+								$('#list5 li').eq(1).fadeIn(400,function(){
+									$(this).css('opacity','1');
+									$('#list5 li').eq(0).fadeIn(1000,function(){
+										$(this).css('opacity','1');
+										$(this).next().next().fadeIn(200,function(){
+//											$(this).css('opacity','1');
+											$(this).animate({
+												left:150
+											},800,function(){
+												var _this=this
+												setTimeout(function(){
+													$(_this).next().fadeIn(400,function(){
+														$(this).css('opacity','1');
+														$(this).next().fadeIn(400,function(){
+															$(this).css('opacity','1');
+															$(this).css('transition','1s 2s');
+															$(this).css('transform','rotateZ(345deg) scale(1)');
+															$(this).next().fadeIn(3000,function(){
+																$(this).css('opacity','1');
+																$(this).animate({
+																	left:200
+																},1000)
+																$(this).next().fadeIn(400,function(){
+																	$(this).css('opacity','1');
+																})
+																$(this).next().next().fadeIn(400,function(){
+																	$(this).css('opacity','1');
+																})
+															})
+														})
+													})
+												},2000)
+											})
+										})
+									})
+								})
+							})
+								
+						});
+						$('#list5 li').eq(6).on('click',function(){
+							$('#page_four').fadeOut(100,function(){
+								page4();
+							})
+						})
+						$('#list5 li').eq(7).on('click',function(){
+								page6();
+						});
+						function page6(){       //第六页
+							var html6=`<div id='page6'>
+											<ul id='list6'>
+												<li></li>
+												<li></li>
+												<li>
+													<div class='zi'>
+														<p>最幸福的时候</p>
+														<p>我们有了自己真正的家</p>
+													</div>
+												</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+											</ul>
+										</div>`;
+							$('#page_six').html(html6)			
+							$('#page_five').fadeOut(100,function(){
+								$('#page_six').fadeIn(100,function(){
+									$('#list6 li').eq(0).fadeIn(100,function(){
+										$(this).animate({
+											left:'-202',
+											opacity:'1'
+										},1000)
+										$(this).next().next().fadeIn(100,function(){
+											$(this).css('opacity','1')
+										})
+										$(this).next().fadeIn(100,function(){
+											$(this).animate({
+												left:'-25',
+												opacity:'1'
+											},2000,function(){
+												var _this=this;
+												setTimeout(function(){
+													$(_this).next().next().fadeIn(100,function(){
+														$(this).css('opacity','1');
+														$(this).next().fadeIn(400,function(){
+															$(this).css('opacity','1');
+															$(this).css('transition','1s 3s');
+															$(this).css('transform','rotateZ(17deg) scale(1)');
+															$(this).next().fadeIn(4000,function(){
+																$(this).css('opacity','1');
+																$(this).animate({
+																	left:240
+																},1000)
+																$(this).next().fadeIn(400,function(){
+																	$(this).css('opacity','1');
+																})
+																$(this).next().next().fadeIn(400,function(){
+																	$(this).css('opacity','1');
+																})
+															})
+														})
+													})
+												},2000)
+											})
+										})
+										
+									})
+								})
+							});
+							$('#list6 li').eq(6).on('click',function(){
+								$('#page_five').fadeOut(100,function(){
+									page5();
+								})
+							})
+							$('#list6 li').eq(7).on('click',function(){
+									page7();
+							});
+							function page7(){    //第七页
+								var html7=`<div id='page7'>
+										<ul id='list7'>
+											<li></li>
+											<li></li>
+											<li>你说</li>
+											<li>两个人一条狗</li>
+											<li>就差个娃了</li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>`;
+								$('#page_seven').html(html7)
+								$('#page_six').fadeOut(100,function(){
+									$('#page_seven').fadeIn(100,function(){
+										$('#list7 li').eq(0).fadeIn(100,function(){
+											$(this).css('opacity','1');
+											$(this).next().fadeIn(100,function(){
+												$(this).css('opacity','1');
+												$(this).css('transform','rotateY(0deg)');	
+											});
+											$(this).next().next().fadeIn(100,function(){
+												$(this).css('opacity','1');
+												$(this).css('transform','rotateY(0deg)');
+											})
+											$(this).next().next().next().fadeIn(100,function(){
+												$(this).css('opacity','1');
+												$(this).css('transform','rotateY(0deg)');
+											})
+											$(this).next().next().next().next().fadeIn(100,function(){
+												$(this).css('opacity','1');
+												$(this).css('transform','rotateY(0deg)');
+												var _this=this;
+												setTimeout(function(){
+													$(_this).next().fadeIn(100,function(){
+														$(this).css('opacity','1');
+														$(this).next().fadeIn(100,function(){
+															$(this).css('opacity','1');
+															$(this).css('transition','1s 3s');
+															$(this).css('transform','rotateZ(10deg) scale(1)');
+															$(this).next().fadeIn(4000,function(){
+																$(this).css('opacity','1');
+																$(this).animate({
+																	left:250
+																},1000)
+																$(this).next().fadeIn(400,function(){
+																	$(this).css('opacity','1');
+																})
+																$(this).next().next().fadeIn(400,function(){
+																	$(this).css('opacity','1');
+																})
+															})
+														})
+													})
+												},3000)
+												
+											})
+										})
+									})
+								});
+								$('#list7 li').eq(8).on('click',function(){
+									$('#page_six').fadeOut(100,function(){
+										page6();
+									})
+								})
+								$('#list7 li').eq(9).on('click',function(){
+										page8();
+								});
+								function page8(){  //第八页
+									var html8=`<div id='page8'>
+													<ul id='list8'>
+														<li></li>
+														<li>
+															<div class='zi'>
+																<p>你像孩子一样</p>
+																<p>要在睡前听我讲故事</p>
+																<p>而我最喜欢我们的故事</p>
+															</div>
+														</li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>`;
+									$('#page_eight').html(html8)			
+									$('#page_seven').fadeOut(100,function(){
+										$('#page_eight').fadeIn(100,function(){
+											$('#list8 li').eq(0).fadeIn(400,function(){
+												$(this).css('opacity','1');
+												$(this).next().fadeIn(400,function(){
+													$(this).css('opacity','1');
+													$(this).next().fadeIn(400,function(){
+														$(this).css('opacity','1');
+														var _this=this
+														setTimeout(function(){
+															$(_this).next().fadeIn(400,function(){
+																$(this).css('opacity','1');
+																$(this).next().fadeIn(200,function(){
+																	$(this).css('opacity','1');
+																	$(this).css('transition','1s 3s');
+																	$(this).css('transform','scale(1)');
+																	$(this).next().fadeIn(4000,function(){
+																		$(this).css('opacity','1');
+																		$(this).animate({
+																			left:250
+																		},1000)
+																		$(this).next().fadeIn(400,function(){
+																			$(this).css('opacity','1');
+																		})
+																		$(this).next().next().fadeIn(400,function(){
+																			$(this).css('opacity','1');
+																		})
+																	})
+																})
+															})
+														},3000)
+													})
+												})
+											})
+										})
+									});
+									$('#list8 li').eq(6).on('click',function(){
+										$('#page_seven').fadeOut(100,function(){
+											page7();
+										})
+									})
+									$('#list8 li').eq(7).on('click',function(){
+											page9();
+									});
+									function page9(){   //第九页
+										var html9=`<div id='page9'>
+														<ul id='list9'>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+															<li></li>
+														</ul>
+													</div>`;
+										$('#page_nine').html(html9)			
+										$('#page_eight').fadeOut(100,function(){
+											$('#page_nine').fadeIn(100,function(){
+												$('#list9 li').eq(0).fadeIn(100,function(){
+													$(this).css('top','0')
+													$(this).css('opacity','1')
+												})
+												$('#list9 li').eq(1).fadeIn(100,function(){
+													$(this).css('top','18')
+													$(this).css('opacity','1')
+													$(this).next().fadeIn(100,function(){
+														$(this).css('opacity','1')
+													})
+													$(this).next().next().fadeIn(100,function(){
+														$(this).css('opacity','1');
+														$(this).next().fadeIn(100,function(){
+															$(this).css('opacity','1');
+														})
+														$(this).next().next().fadeIn(100,function(){
+															$(this).css('opacity','1');
+														})
+														$(this).next().next().next().fadeIn(100,function(){
+															$(this).css('opacity','1');
+														})
+														
+													})
+												})
+											})
+										})
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
