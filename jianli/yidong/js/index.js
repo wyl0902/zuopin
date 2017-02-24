@@ -250,7 +250,7 @@ $(function(){
 					$('#page_three').fadeIn(100,function(){
 						$('#list3 li').eq(0).fadeIn(100,function(){
 							$(this).animate({
-								opacity:0.5,
+								opacity:1,
 								left:228
 							},3000,function(){
 //								$(this).animate({
@@ -258,7 +258,7 @@ $(function(){
 //								},2000)
 							})
 						})
-						$('#list3 li').eq(1).fadeIn(10,function(){
+						$('#list3 li').eq(1).fadeIn(100,function(){
 							$(this).animate({
 								opacity:1,
 								left:-200
@@ -342,12 +342,12 @@ $(function(){
 								$(this).next().fadeIn(100,function(){
 									$(this).animate({
 										opacity:1,
-										top:170
+										top:48
 									},1000,function(){
 										$(this).next().fadeIn(100,function(){
 											$(this).animate({
 												opacity:1,
-												top:200
+												top:84
 											},1000,function(){
 												
 											})
