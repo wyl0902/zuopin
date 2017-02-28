@@ -1,4 +1,4 @@
-window.onload=function(){
+$(function(){
 	var onoff=false;
 	$('#bgm').on('click',function(){
 		if(onoff){
@@ -733,4 +733,4 @@ window.onload=function(){
 	
 	
 	
-}
+})
