@@ -125,7 +125,7 @@ $(function(){
 				</li>
 			</ul>`;
 			$('#page_two').html(html2)
-			$('#page_one').fadeOut(100,function(){
+			$('#page_one').fadeOut(1500,function(){
 				$('#page_two').fadeIn(100,function(){
 					$('#list1 li').eq(0).fadeIn(200,function(){
 						$(this).animate({
@@ -343,13 +343,13 @@ $(function(){
 								$(this).next().fadeIn(100,function(){
 									$(this).animate({
 										opacity:1,
-										top:48
-									},1000,function(){
+										top:'20%'
+									},500,function(){
 										$(this).next().fadeIn(100,function(){
 											$(this).animate({
 												opacity:1,
-												top:84
-											},1000,function(){
+												top:'25%'
+											},500,function(){
 												
 											})
 										})
@@ -558,48 +558,52 @@ $(function(){
 											$(this).next().fadeIn(100,function(){
 												$(this).css('opacity','1');
 												$(this).css('-webkit-transform','rotateY(0deg)');
-												$(this).css('transform','rotateY(0deg)');	
-											});
-											$(this).next().next().fadeIn(100,function(){
-												$(this).css('opacity','1');
-												$(this).css('-webkit-transform','rotateY(0deg)');
 												$(this).css('transform','rotateY(0deg)');
-											})
-											$(this).next().next().next().fadeIn(100,function(){
-												$(this).css('opacity','1');
-												$(this).css('-webkit-transform','rotateY(0deg)');
-												$(this).css('transform','rotateY(0deg)');
-											})
-											$(this).next().next().next().next().fadeIn(100,function(){
-												$(this).css('opacity','1');
-												$(this).css('-webkit-transform','rotateY(0deg)');
-												$(this).css('transform','rotateY(0deg)');
-												var _this=this;
-												setTimeout(function(){
-													$(_this).next().fadeIn(100,function(){
+												$(this).next().fadeIn(100,function(){
+													$(this).css('opacity','1');
+													$(this).css('-webkit-transform','rotateY(0deg)');
+													$(this).css('transform','rotateY(0deg)');
+													$(this).next().fadeIn(100,function(){
 														$(this).css('opacity','1');
+														$(this).css('-webkit-transform','rotateY(0deg)');
+														$(this).css('transform','rotateY(0deg)');
 														$(this).next().fadeIn(100,function(){
 															$(this).css('opacity','1');
-															$(this).css('transition','1s 3s');
-															$(this).css('-webkit-transform','rotateZ(10deg) scale(1)');
-															$(this).css('transform','rotateZ(10deg) scale(1)');
-															$(this).next().fadeIn(4000,function(){
-																$(this).css('opacity','1');
-																$(this).animate({
-																	left:250
-																},1000)
-																$(this).next().fadeIn(400,function(){
+															$(this).css('-webkit-transform','rotateY(0deg)');
+															$(this).css('transform','rotateY(0deg)');
+															var _this=this;
+															setTimeout(function(){
+																$(_this).next().fadeIn(100,function(){
 																	$(this).css('opacity','1');
+																	$(this).next().fadeIn(100,function(){
+																		$(this).css('opacity','1');
+																		$(this).css('transition','1s 3s');
+																		$(this).css('-webkit-transform','rotateZ(10deg) scale(1)');
+																		$(this).css('transform','rotateZ(10deg) scale(1)');
+																		$(this).next().fadeIn(4000,function(){
+																			$(this).css('opacity','1');
+																			$(this).animate({
+																				left:250
+																			},1000)
+																			$(this).next().fadeIn(400,function(){
+																				$(this).css('opacity','1');
+																			})
+																			$(this).next().next().fadeIn(400,function(){
+																				$(this).css('opacity','1');
+																			})
+																		})
+																	})
 																})
-																$(this).next().next().fadeIn(400,function(){
-																	$(this).css('opacity','1');
-																})
-															})
+															},3000)
+															
 														})
 													})
-												},3000)
+												})
+											
 												
-											})
+											});
+											
+											
 										})
 									})
 								});
@@ -696,7 +700,7 @@ $(function(){
 													$(this).css('opacity','1')
 												})
 												$('#list9 li').eq(1).fadeIn(100,function(){
-													$(this).css('top','18')
+													$(this).css('bottom','0')
 													$(this).css('opacity','1')
 													$(this).next().fadeIn(100,function(){
 														$(this).css('opacity','1')

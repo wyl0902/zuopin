@@ -238,7 +238,7 @@ p {
   width: 4.8125rem;
   height: 10.75rem;
   left: 7.9375rem;
-  top: 25.375rem;
+  bottom: -20%;
   background: url(../img/next.png) no-repeat;
   background-size: 100% 100% ;
 }
@@ -350,7 +350,7 @@ p {
 #list1 li:nth-child(10) {
   width: 4.875rem;
   height: 10.0625rem;
-  top: 26.375rem;
+  bottom: -20%;
   left: 1.125rem;
   background: url(../img/back.png);
   background-size: 100% 100% ;
@@ -361,7 +361,7 @@ p {
 #list1 li:nth-child(11) {
   width: 4.875rem;
   height: 10.0625rem;
-  top: 25.9375rem;
+  bottom: -20%;
   left: 5.9375rem;
   background: url(../img/next.png);
   background-size: 100% 100% ;
@@ -413,8 +413,8 @@ p {
 }
 #list3 li:nth-child(1) {
   width: 45.375rem;
-  height: 23.4375rem;
-  top: 2.5625rem;
+  height: 100%;
+  top: 0rem;
   opacity: 0.5;
   left: -12.625rem;
   background: url(../img/bg11.png) no-repeat;
@@ -425,9 +425,9 @@ p {
 }
 #list3 li:nth-child(2) {
   width: 45.4375rem;
-  height: 30.0625rem;
+  height: 100%;
   opacity: 0.5;
-  top: -0.75rem;
+  top: 0rem;
   left: -39.375rem;
   background: url(../img/bg111.png) no-repeat;
   background-size: 100% 100%;
@@ -445,7 +445,7 @@ p {
 #list3 li:nth-child(4) {
   width: 16.625rem;
   height: 18.25rem;
-  top: 12.625rem;
+  bottom: 2%;
   left: -31.25rem;
   background: url(../img/dan5.png) no-repeat;
   background-size: 100% 100%;
@@ -485,7 +485,7 @@ p {
 #list3 li:nth-child(8) {
   width: 4.875rem;
   height: 10.0625rem;
-  top: 26.5625rem;
+  bottom: -20%;
   left: 10rem;
   background: url(../img/back.png);
   background-size: 100% 100% ;
@@ -496,7 +496,7 @@ p {
 #list3 li:nth-child(9) {
   width: 4.875rem;
   height: 10.0625rem;
-  top: 26.0625rem;
+  bottom: -20%;
   left: 15rem;
   background: url(../img/next.png);
   background-size: 100% 100% ;
@@ -548,10 +548,10 @@ p {
 }
 #list4 li:nth-child(1) {
   width: 47.0625rem;
-  height: 25.375rem;
+  height: 100%;
   left: -16.875rem;
-  top: -1.125rem;
-  opacity: 0.7;
+  top: 0rem;
+  opacity: 0.5;
   background: url(../img/hen11.png) no-repeat;
   background-size: 100% 100%;
   transform: rotateZ(270deg);
@@ -560,10 +560,10 @@ p {
 }
 #list4 li:nth-child(2) {
   width: 47.125rem;
-  height: 33.4375rem;
+  height: 100%;
   left: -43.625rem;
-  top: -5.125rem;
-  opacity: 0.6;
+  top: 0rem;
+  opacity: 0.5;
   background: url(../img/hen1.png) no-repeat;
   background-size: 100% 100%;
   transform: rotateZ(270deg);
@@ -588,16 +588,16 @@ p {
   width: 14.6875rem;
   height: 17.1875rem;
   left: -16.625rem;
-  top: 8.4375rem;
+  bottom: 10%;
   background: url(../img/dan8.png) no-repeat;
   background-size: 100% 100%;
   z-index: 5;
 }
 #list4 li:nth-child(6) {
   width: 23.5625rem;
-  height: 36.1875rem;
+  height: 100%;
   left: -1.75rem;
-  top: -1.0625rem;
+  top: 0rem;
   transition: 3s;
   background: url(../img/hou1.png) no-repeat;
   background-size: 100% 100%;
@@ -627,7 +627,7 @@ p {
 #list4 li:nth-child(9) {
   width: 4.875rem;
   height: 10.0625rem;
-  top: 26.375rem;
+  bottom: -20%;
   left: 1.875rem;
   background: url(../img/back.png);
   background-size: 100% 100% ;
@@ -638,7 +638,7 @@ p {
 #list4 li:nth-child(10) {
   width: 4.875rem;
   height: 10.75rem;
-  top: 25.875rem;
+  bottom: -20%;
   left: 6.875rem;
   background: url(../img/next.png);
   background-size: 100% 100% ;
@@ -726,7 +726,7 @@ p {
 #list5 li:nth-child(7) {
   width: 4.875rem;
   height: 10.0625rem;
-  top: 26.625rem;
+  bottom: -20%;
   left: 10.3125rem;
   background: url(../img/back.png);
   background-size: 100% 100% ;
@@ -737,7 +737,7 @@ p {
 #list5 li:nth-child(8) {
   width: 4.8125rem;
   height: 10.75rem;
-  top: 26.1875rem;
+  bottom: -20%;
   left: 14.75rem;
   background: url(../img/next.png);
   background-size: 100% 100% ;
@@ -766,9 +766,9 @@ p {
 }
 #list6 li:nth-child(1) {
   width: 41.4375rem;
-  height: 32.875rem;
+  height: 100%;
   left: -28.25rem;
-  top: -1.25rem;
+  top: 0rem;
   background: url(../img/dan4.png) no-repeat;
   background-size: 100% 100%;
   z-index: 1;
@@ -777,7 +777,7 @@ p {
   width: 25.4375rem;
   height: 26rem;
   left: -17.875rem;
-  top: 8.4375rem;
+  bottom: -15%;
   background: url(../img/dan2.png) no-repeat;
   background-size: 100% 100%;
   z-index: 2;
@@ -792,9 +792,9 @@ p {
 }
 #list6 li:nth-child(4) {
   width: 23.4375rem;
-  height: 36rem;
+  height: 100%;
   left: -1.625rem;
-  top: -1.125rem;
+  top: 0rem;
   transition: 4s;
   background: url(../img/hou3.png) no-repeat;
   background-size: 100% 100%;
@@ -823,7 +823,7 @@ p {
 #list6 li:nth-child(7) {
   width: 4.875rem;
   height: 10.0625rem;
-  top: 26.375rem;
+  bottom: -20%;
   left: 1.875rem;
   background: url(../img/back.png);
   background-size: 100% 100% ;
@@ -834,7 +834,7 @@ p {
 #list6 li:nth-child(8) {
   width: 4.8125rem;
   height: 10.75rem;
-  top: 25.875rem;
+  bottom: -20%;
   left: 6.875rem;
   background: url(../img/next.png);
   background-size: 100% 100% ;
@@ -863,9 +863,9 @@ p {
 }
 #list7 li:nth-child(1) {
   width: 34.75rem;
-  height: 40.4375rem;
+  height: 110%;
   left: -8.625rem;
-  top: -2.75rem;
+  top: 0rem;
   transition: 2s;
   background: url(../img/dan6.png) no-repeat;
   background-size: 100% 100%;
@@ -915,10 +915,10 @@ p {
 }
 #list7 li:nth-child(6) {
   width: 23.4375rem;
-  height: 36rem;
+  height: 100%;
   left: -1.625rem;
   transition: 3s;
-  top: -1.125rem;
+  top: 0rem;
   background: url(../img/hou4.png) no-repeat;
   background-size: 100% 100%;
   z-index: 6;
@@ -946,7 +946,7 @@ p {
 #list7 li:nth-child(9) {
   width: 4.875rem;
   height: 10.0625rem;
-  top: 26.8125rem;
+  bottom: -20%;
   left: 1.875rem;
   background: url(../img/back.png);
   background-size: 100% 100% ;
@@ -957,7 +957,7 @@ p {
 #list7 li:nth-child(10) {
   width: 4.8125rem;
   height: 10.75rem;
-  top: 26.3125rem;
+  bottom: -20%;
   left: 6.875rem;
   background: url(../img/next.png);
   background-size: 100% 100% ;
@@ -986,9 +986,9 @@ p {
 }
 #list8 li:nth-child(1) {
   width: 23.5rem;
-  height: 35.125rem;
+  height: 100%;
   left: -1.75rem;
-  top: -1.25rem;
+  top: 0rem;
   transition: 1.5s;
   background: url(../img/chuan.jpeg) no-repeat;
   background-size: 100% 100%;
@@ -1014,9 +1014,9 @@ p {
 }
 #list8 li:nth-child(4) {
   width: 23.5rem;
-  height: 36.0625rem;
+  height: 100%;
   left: -1.5625rem;
-  top: -1.25rem;
+  top: 0rem;
   transition: 4s;
   background: url(../img/hou5.png) no-repeat;
   background-size: 100% 100%;
@@ -1044,7 +1044,7 @@ p {
 #list8 li:nth-child(7) {
   width: 4.875rem;
   height: 10.0625rem;
-  top: 26.375rem;
+  bottom: -20%;
   left: 1.875rem;
   background: url(../img/back.png);
   background-size: 100% 100% ;
@@ -1055,7 +1055,7 @@ p {
 #list8 li:nth-child(8) {
   width: 4.8125rem;
   height: 10.75rem;
-  top: 25.875rem;
+  bottom: -20%;
   left: 6.875rem;
   background: url(../img/next.png);
   background-size: 100% 100% ;
@@ -1085,7 +1085,7 @@ p {
 }
 #list9 li:nth-child(1) {
   width: 23.375rem;
-  height: 34.6875rem;
+  height: 100%;
   left: -1.75rem;
   top: -5rem;
   transition: 1s;
@@ -1095,9 +1095,9 @@ p {
 }
 #list9 li:nth-child(2) {
   width: 23.5rem;
-  height: 32.9375rem;
+  height: 100%;
   left: -1.75rem;
-  top: -1.0625rem;
+  bottom: -5rem;
   transition: 1s;
   background: url(../img/xiabai.png) no-repeat;
   background-size: 100% 100%;
@@ -1107,7 +1107,7 @@ p {
   width: 8.9375rem;
   height: 8.9375rem;
   left: 0.9375rem;
-  top: 8.125rem;
+  top: 8.9375rem;
   transition: 1s;
   transform: rotateZ(349deg);
   -webkit-transform: rotateZ(349deg);
@@ -1131,7 +1131,7 @@ p {
   width: 12.5rem;
   height: 3.75rem;
   left: 3.125rem;
-  top: 20rem;
+  top: 16.25rem;
   transition: 1s;
   transform: rotateZ(15deg);
   -webkit-transform: rotateZ(15deg);
